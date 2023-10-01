@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body {
+    background: url(./images/OpLogo.png);
+    background-size: 15vh;
+}
+
+.sContainer {
+    width: 100vw;
+    height: 100vh;
+
+}
+.crew_title {
+    font-size: 5vw;
+    background-color: yellow;
+    color:blue;
+    text-align: center;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+.crew_button {
+    background-color: red;
+    color: blue;
+    font-size: 5vw;
+    text-decoration: underline;
+    padding: 1vh 1vw;
+    border-radius: 5vw;
+    font-size: 2vh;
+    font-weight: 860;
+
+}
+
+.crew_description {
+    font-size: 5vw;
+    display: none;
+/* hid the description... */
+/* with JS button can change display to visible*/
+}
+
+.names {
+    background: blue;
+    padding: 1vh;
+    color: rgb(201, 223, 248);
+    
+}
+
+.titles {
+    background: yellow;
+}
+
+/* the crew */
+
+.crew_navigator {
+    background: red;
+    margin-left: 22vw;
+    margin-right: 22vw;
+    font-weight: 900;
+    color: rgb(0, 0, 92);
+
+}
+.crew_captain {
+    background: red;
+    margin-left: 22vw;
+    margin-right: 22vw;
+    font-weight: 900;
+    color: rgb(0, 0, 92);
+}
+
+.crew_sniper {
+    background: red;
+    margin-left: 22vw;
+    margin-right: 22vw;
+    font-weight: 900;
+    color: rgb(0, 0, 92);
+
+}
+
+.crew_cook {
+    background: red;
+    margin-left: 22vw;
+    margin-right: 22vw;
+    font-weight: 900;
+    color: rgb(0, 0, 92);
+
+}
+.crew_doctor {
+    background: red;
+    margin-left: 22vw;
+    margin-right: 22vw;
+    font-weight: 900;
+    color: rgb(0, 0, 92);
+
+}
+
+.crew_swordsman {
+    background: red;
+    margin-left: 22vw;
+    margin-right: 22vw;
+    font-weight: 900;
+    color: rgb(0, 0, 92);
+
+}
+/*------------- Image section-------------------  */
+
+.luffy_img {
+    width: 50px;
+    height: 80px;
+    }
+
+.nami_img {
+    width: 50px;
+    height: 80px;
+}
+
+.zoro_img {
+    width: 50px;
+    height: 80px;
+}
+
+.usopp_img {
+    width: 50px;
+    height: 80px;
+}
+
+.sanji_img {
+    width: 50px;
+    height: 80px;
+    }
+
+
+.tony_img {
+    width: 50px;
+    height: 80px;
+    }
+
+/* crew slides */
+
+
+/* started at 320px for smalles mobile size. */
+/* most people access internet through mobile */
+/* the future is mobile.. so mobile first */
+
+
+/* planned on doing 3 responsive designs.. 
+mobile, tablet, laptop/desktop and beyond */
+
+/* laptop and up.... */
+/* min-width 1023px means 1023 px and up it styles */
+@media all and (min-width: 1023px) {
+
+
+
+
+}
