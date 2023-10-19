@@ -2,16 +2,21 @@
     margin: 0;
     padding: 0;
     text-align: center;
+    font-family: "LuffyScript", 'Courier New', Courier, monospace;
 }
 
 body {
     background: url(./images/OpLogo.png);
     background-size: 15vh;
+
+}
+
+.crew_container {
+    width: 100vw;
 }
 
 .sContainer {
     width: 100vw;
-    height: 100vh;
 
 }
 .crew_title {
@@ -34,15 +39,22 @@ body {
     font-weight: 860;
 
 }
-
+.crew_button:hover {
+    background-color:rgb(157, 203, 244);
+    color: red;
+    font-size: 22px;
+}
 
 .crew_description {
     font-size: 5vw;
     display: none;
-    background: red;
-    color: blue;
-/* hid the description... */
-/* with JS button can change display to visible*/
+    background: rgb(157, 203, 244);
+    color: rgb(7, 7, 146);
+    width: 80vw;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 8px;
 }
 
 .names {
@@ -66,8 +78,16 @@ body {
     color: rgb(0, 0, 92);
 
 }
+.characterBackground {
+    background: url(./images/wantedWEBP.gif);
+    background-size: 100px;
+}
+
+.mainsBoxShadow {
+    box-shadow: 15px 10px 200px black ;
+}
+
 .crew_captain {
-    background: red;
     margin-left: 22vw;
     margin-right: 22vw;
     font-weight: 900;
@@ -75,7 +95,6 @@ body {
 }
 
 .crew_sniper {
-    background: red;
     margin-left: 22vw;
     margin-right: 22vw;
     font-weight: 900;
@@ -84,7 +103,6 @@ body {
 }
 
 .crew_cook {
-    background: red;
     margin-left: 22vw;
     margin-right: 22vw;
     font-weight: 900;
@@ -92,7 +110,6 @@ body {
 
 }
 .crew_doctor {
-    background: red;
     margin-left: 22vw;
     margin-right: 22vw;
     font-weight: 900;
@@ -101,7 +118,6 @@ body {
 }
 
 .crew_swordsman {
-    background: red;
     margin-left: 22vw;
     margin-right: 22vw;
     font-weight: 900;
@@ -110,53 +126,27 @@ body {
 }
 /*------------- Image section-------------------  */
 
-.luffy_img {
-    width: 50px;
-    height: 80px;
+/* I'm repeating my self.. DRY... need dry code.. */
+/* tried to make it a little more responsive with percentages */
+.characterImg {
+    width: 20%;
+    height: 10%;
     }
 
-.nami_img {
-    width: 50px;
-    height: 80px;
-}
-
-.zoro_img {
-    width: 50px;
-    height: 80px;
-}
-
-.usopp_img {
-    width: 50px;
-    height: 80px;
-}
-
-.sanji_img {
-    width: 50px;
-    height: 80px;
+    footer {
+        background-color: white;
+        width: 100%;
+        margin: 0 auto;
     }
 
-
-.tony_img {
-    width: 50px;
-    height: 80px;
-    }
-
-/* crew slides */
-
-
-/* started at 320px for smalles mobile size. */
-/* most people access internet through mobile */
-/* the future is mobile.. so mobile first */
-
-
-/* planned on doing 3 responsive designs.. 
-mobile, tablet, laptop/desktop and beyond */
-
-/* laptop and up.... */
-/* min-width 1023px means 1023 px and up it styles */
 @media all and (min-width: 1023px) {
 
 
 
 
+}
+
+@font-face {
+    font-family: LuffyScript;
+    src: url(./fonts/xbonesrough.ttf);
 }
