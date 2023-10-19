@@ -35,9 +35,12 @@ body {
 
 }
 
+
 .crew_description {
     font-size: 5vw;
     display: none;
+    background: red;
+    color: blue;
 /* hid the description... */
 /* with JS button can change display to visible*/
 }
