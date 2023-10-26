@@ -48,8 +48,8 @@ body {
 .crew_description {
     font-size: 5vw;
     display: none;
-    background: rgb(157, 203, 244);
-    color: rgb(7, 7, 146);
+    background: rgb(188, 219, 245);
+    color: rgb(2, 2, 98);
     width: 80vw;
     text-align: center;
     margin: 0 auto;
@@ -157,19 +157,27 @@ body {
         ;
     }
     .characterImg {
-        width: 20vw;
-        height: 35vw;
+        width: 15vw;
+        height: 28vw;
+        }
+
+        .crew_description {
+            
+            font-size: 2vw;
+            text-wrap: wrap;
+            width: 50vw;
+            height: 60vh;
+            border-radius: 9%;
         }
 
         .crew_all {
-   
             inset: 0;
             padding: -1%;
             margin: 0 auto;
         }
         .names,
         .titles {
-            width: 120%;
+            width: 121%;
         }
 
         .navigator,
