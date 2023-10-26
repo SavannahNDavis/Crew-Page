@@ -70,64 +70,69 @@ body {
 
 /* the crew */
 
-.crew_navigator {
-    background: red;
-    margin-left: 22vw;
-    margin-right: 22vw;
-    font-weight: 900;
-    color: rgb(0, 0, 92);
 
-}
 .characterBackground {
     background: url(./images/wantedWEBP.gif);
     background-size: 100px;
 }
 
 .mainsBoxShadow {
-    box-shadow: 15px 10px 200px black ;
+    box-shadow: 0px 10px 200px black ;
 }
 
-.crew_captain {
+.navigator {
     margin-left: 22vw;
     margin-right: 22vw;
     font-weight: 900;
     color: rgb(0, 0, 92);
-}
+    grid-area: navigator;
 
-.crew_sniper {
+}
+.captain {
     margin-left: 22vw;
     margin-right: 22vw;
     font-weight: 900;
     color: rgb(0, 0, 92);
-
+    grid-area: captain;
 }
 
-.crew_cook {
+.sniper {
     margin-left: 22vw;
     margin-right: 22vw;
     font-weight: 900;
     color: rgb(0, 0, 92);
+    grid-area: sniper;
 
 }
-.crew_doctor {
+
+.cook {
     margin-left: 22vw;
     margin-right: 22vw;
     font-weight: 900;
     color: rgb(0, 0, 92);
+    grid-area: cook;
 
 }
-
-.crew_swordsman {
+.doctor {
     margin-left: 22vw;
     margin-right: 22vw;
     font-weight: 900;
     color: rgb(0, 0, 92);
+    grid-area: doctor;
+
+}
+
+.swordsman {
+    margin-left: 22vw;
+    margin-right: 22vw;
+    font-weight: 900;
+    color: rgb(0, 0, 92);
+    grid-area: swordsman;
 
 }
 /*------------- Image section-------------------  */
 
-/* I'm repeating my self.. DRY... need dry code.. */
-/* tried to make it a little more responsive with percentages */
+
 .characterImg {
     width: 20%;
     height: 10%;
@@ -139,10 +144,44 @@ body {
         margin: 0 auto;
     }
 
-@media all and (min-width: 1023px) {
+@media all and (min-width: 800px) {
 
+    .crew_members {
+        display: grid;
+        width: 100%;
+        justify-content: center;
+        grid-template-areas:
+        "captain cook"
+        "doctor swordsman "
+        "sniper navigator"
+        ;
+    }
+    .characterImg {
+        width: 20vw;
+        height: 35vw;
+        }
 
+        .crew_all {
+   
+            inset: 0;
+            padding: -1%;
+            margin: 0 auto;
+        }
+        .names,
+        .titles {
+            width: 120%;
+        }
 
+        .navigator,
+        .captain,
+        .sniper,
+        .cook,
+        .doctor,
+        .swordsman {
+                width: 45%;
+                margin: 0;
+                padding: 1vh 10vw;
+        }
 
 }
 
