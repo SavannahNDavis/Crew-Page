@@ -11,6 +11,11 @@ body {
 
 }
 
+.header {
+    font-family: "PirateScript", 'Courier New', Courier, monospace;
+    letter-spacing: 4px;
+}
+
 .crew_container {
     width: 100vw;
 }
@@ -196,4 +201,9 @@ body {
 @font-face {
     font-family: LuffyScript;
     src: url(./fonts/xbonesrough.ttf);
+}
+
+@font-face {
+    font-family: PirateScript;
+    src: url(./fonts/JackPirate_PERSONAL_USE_ONLY.ttf);
 }
