@@ -2,16 +2,26 @@
     margin: 0;
     padding: 0;
     text-align: center;
+    font-family: "LuffyScript", 'Courier New', Courier, monospace;
 }
 
 body {
     background: url(./images/OpLogo.png);
     background-size: 15vh;
+
+}
+
+.header {
+    font-family: "PirateScript", 'Courier New', Courier, monospace;
+    letter-spacing: 4px;
+}
+
+.crew_container {
+    width: 100vw;
 }
 
 .sContainer {
     width: 100vw;
-    height: 100vh;
 
 }
 .crew_title {
@@ -34,15 +44,22 @@ body {
     font-weight: 860;
 
 }
-
+.crew_button:hover {
+    background-color:rgb(157, 203, 244);
+    color: red;
+    font-size: 22px;
+}
 
 .crew_description {
     font-size: 5vw;
     display: none;
-    background: red;
-    color: blue;
-/* hid the description... */
-/* with JS button can change display to visible*/
+    background: rgb(188, 219, 245);
+    color: rgb(2, 2, 98);
+    width: 80vw;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 8px;
 }
 
 .names {
@@ -58,105 +75,135 @@ body {
 
 /* the crew */
 
-.crew_navigator {
-    background: red;
-    margin-left: 22vw;
-    margin-right: 22vw;
-    font-weight: 900;
-    color: rgb(0, 0, 92);
 
-}
-.crew_captain {
-    background: red;
-    margin-left: 22vw;
-    margin-right: 22vw;
-    font-weight: 900;
-    color: rgb(0, 0, 92);
+.characterBackground {
+    background: url(./images/wantedWEBP.gif);
+    background-size: 100px;
 }
 
-.crew_sniper {
-    background: red;
-    margin-left: 22vw;
-    margin-right: 22vw;
-    font-weight: 900;
-    color: rgb(0, 0, 92);
-
+.mainsBoxShadow {
+    box-shadow: 0px 10px 200px black ;
 }
 
-.crew_cook {
-    background: red;
+.navigator {
     margin-left: 22vw;
     margin-right: 22vw;
     font-weight: 900;
     color: rgb(0, 0, 92);
+    grid-area: navigator;
 
 }
-.crew_doctor {
-    background: red;
+.captain {
     margin-left: 22vw;
     margin-right: 22vw;
     font-weight: 900;
     color: rgb(0, 0, 92);
+    grid-area: captain;
+}
+
+.sniper {
+    margin-left: 22vw;
+    margin-right: 22vw;
+    font-weight: 900;
+    color: rgb(0, 0, 92);
+    grid-area: sniper;
 
 }
 
-.crew_swordsman {
-    background: red;
+.cook {
     margin-left: 22vw;
     margin-right: 22vw;
     font-weight: 900;
     color: rgb(0, 0, 92);
+    grid-area: cook;
+
+}
+.doctor {
+    margin-left: 22vw;
+    margin-right: 22vw;
+    font-weight: 900;
+    color: rgb(0, 0, 92);
+    grid-area: doctor;
+
+}
+
+.swordsman {
+    margin-left: 22vw;
+    margin-right: 22vw;
+    font-weight: 900;
+    color: rgb(0, 0, 92);
+    grid-area: swordsman;
 
 }
 /*------------- Image section-------------------  */
 
-.luffy_img {
-    width: 50px;
-    height: 80px;
+
+.characterImg {
+    width: 20%;
+    height: 10%;
     }
 
-.nami_img {
-    width: 50px;
-    height: 80px;
-}
-
-.zoro_img {
-    width: 50px;
-    height: 80px;
-}
-
-.usopp_img {
-    width: 50px;
-    height: 80px;
-}
-
-.sanji_img {
-    width: 50px;
-    height: 80px;
+    footer {
+        background-color: white;
+        width: 100%;
+        margin: 0 auto;
     }
 
+@media all and (min-width: 800px) {
 
-.tony_img {
-    width: 50px;
-    height: 80px;
+    .crew_members {
+        display: grid;
+        width: 100%;
+        justify-content: center;
+        grid-template-areas:
+        "captain cook"
+        "doctor swordsman "
+        "sniper navigator"
+        ;
     }
+    .characterImg {
+        width: 15vw;
+        height: 28vw;
+        }
 
-/* crew slides */
+        .crew_description {
+            
+            font-size: 2vw;
+            text-wrap: wrap;
+            width: 50vw;
+            height: 60vh;
+            border-radius: 9%;
+        }
 
+        .crew_all {
+            inset: 0;
+            padding: -1%;
+            margin: 0 auto;
+        }
+        .names,
+        .titles {
+            width: 121%;
+        }
 
-/* started at 320px for smalles mobile size. */
-/* most people access internet through mobile */
-/* the future is mobile.. so mobile first */
+        .navigator,
+        .captain,
+        .sniper,
+        .cook,
+        .doctor,
+        .swordsman {
+                width: 45%;
+                margin: 0;
+                padding: 1vh 10vw;
+        }
 
+}
 
-/* planned on doing 3 responsive designs.. 
-mobile, tablet, laptop/desktop and beyond */
+@font-face {
+    font-family: LuffyScript;
+    src: url(./fonts/xbonesrough.ttf);
+}
 
-/* laptop and up.... */
-/* min-width 1023px means 1023 px and up it styles */
-@media all and (min-width: 1023px) {
-
-
-
-
+@font-face {
+    font-family: PirateScript;
+    src: url(./fonts/JackPirate_PERSONAL_USE_ONLY.ttf);
 }
